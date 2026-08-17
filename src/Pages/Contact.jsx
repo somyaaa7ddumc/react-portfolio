@@ -2,25 +2,80 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <>
-      <div className="contact">
+    <section className="contact-section">
 
-        <h1>Contact Me</h1>
+      <div className="section-label">
+        <span>05</span>
+        CONTACT
+      </div>
 
-        <div className="contact-info">
+      <div className="contact-intro">
 
-          <p><strong>Email:</strong> abc@email.com</p>
+        <div>
+          <p className="contact-kicker">Open to opportunities</p>
 
-          <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+          <h2>
+            Let's
+            <br />
+            <span>connect.</span>
+          </h2>
+        </div>
 
-          <p><strong>GitHub:</strong> github.com/yourusername</p>
+        <p className="contact-description">
+          I'm currently looking for internship opportunities and ways
+          to grow as a web developer. I'm always open to learning,
+          collaborating, and connecting with others in the field.
+        </p>
 
-          <p><strong>LinkedIn:</strong> linkedin.com/in/yourusername</p>
+      </div>
+
+
+      <div className="contact-grid">
+
+        <div className="contact-main">
+          <p className="contact-label">GET IN TOUCH</p>
+
+          <a
+            href="mailto:somyaagarwal780@email.com"
+            className="contact-email"
+          >
+            somyaagarwal780@email.com
+            <span>↗</span>
+          </a>
+        </div>
+
+
+        <div className="contact-links">
+
+          <a
+            href="https://github.com/somyaaa7ddumc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>GitHub</span>
+            <span>↗</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/somya-agarwal-867595363/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>LinkedIn</span>
+            <span>↗</span>
+          </a>
 
         </div>
 
       </div>
-    </>
+
+
+      <div className="contact-footer">
+        <span>05 / 06</span>
+        <span>LEARNING · BUILDING · LOOKING AHEAD</span>
+      </div>
+
+    </section>
   )
 }
 

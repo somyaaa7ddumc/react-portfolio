@@ -1,116 +1,290 @@
 import React from 'react'
- 
+
 const Projects = () => {
   return (
-    <>
-    <h1>-- Projects --</h1>
-  <div className='Project-container'>
+    <section className="projects-section">
 
-  <div className='card'>
-      <div className='card-header'>
-          <h2> Weather App </h2>
+      <div className="section-label">
+        <span>04</span>
+        PROJECTS
       </div>
-      <div className='card-image2'>
-          <img src="https://cdn.pixabay.com/photo/2012/11/28/09/53/hurricane-67581_1280.jpg" alt="form image" />
-      </div>
-      <div className='card-body'>
-            <p>
-              A responsive weather app that provides real-time weather information for different cities, including temperature, humidity, wind speed, and weather conditions.
-            </p>
-            <a href="https://comfy-custard-8ace20.netlify.app/" target="_blank" rel="noopener noreferrer">
-              View on Netlify
-            </a>
-      </div>
-    </div>
 
-    <div className='card'>
-      <div className='card-header'>
-          <h2> TO-DO List </h2>
-      </div>
-      <div className='card-image'>
-          <img src="https://cdn.pixabay.com/photo/2017/03/13/17/26/web-design-2140929_1280.png" alt="portfolio html css" />
-      </div>
-      <div className='card-body'>
-            <p>
-              My first portfolio website built using pure HTML and CSS, featuring a responsive navbar, about section, skills, and project cards.
-            </p>
-            <a href="https://cerulean-axolotl-cd7c45.netlify.app/" target="_blank" rel="noopener noreferrer">
-              View on Netlify
-            </a>
-      </div>
-    </div>
- 
-    <div className='card'>
-      <div className='card-header'>
-          <h2> Portfolio (React + Router) </h2>
-      </div>
-      <div className='card-image'>
-          <img src="https://cdn.pixabay.com/photo/2017/08/10/07/32/logo-2617177_1280.png" alt="react portfolio" />
-      </div>
-      <div className='card-body'>
-            <p>
-              An upgraded version of my portfolio rebuilt using React.js with React Router for multi-page navigation and reusable components.
-            </p>
-            <a href="https://incredible-liger-c7a0a2.netlify.app/" target="_blank" rel="noopener noreferrer">
-              View on Netlify
-            </a>
-      </div>
-    </div>
- 
-    <div className='card'>
-      <div className='card-header'>
-          <h2> Zodiac Finder </h2>
-      </div>
-      <div className='card-image'>
-          <img src="https://cdn.pixabay.com/photo/2021/01/16/05/09/zodiac-5921179_1280.png" alt="zodiac wheel" />
-      </div>
-      <div className='card-body'>
-            <p>
-              An interactive website where you can find your Zodiac Sign using just your date and month of birth.
-            </p>
-            <a href="https://incredible-liger-c7a0a2.netlify.app/" target="_blank" rel="noopener noreferrer">
-              View on Netlify
-            </a>
-      </div>
-    </div>
- 
-    <div className='card'>
-      <div className='card-header'>
-          <h2> Registration Form </h2>
-      </div>
-      <div className='card-image2'>
-          <img src="https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="form image" />
-      </div>
-      <div className='card-body'>
-            <p>
-              A Registration form which you can customize according to your needs and fill it effortlessly.
-            </p>
-            <a href="https://your-registration-form.netlify.app" target="_blank" rel="noopener noreferrer">
-              View on Netlify
-            </a>
-      </div>
-    </div>
+      <div className="projects-intro">
+        <div>
+          <p className="projects-kicker">Selected work</p>
 
-    <div className='card'>
-      <div className='card-header'>
-          <h2> Facebook Login Clone </h2>
+          <h2>
+            Things I've
+            <br />
+            <span>built.</span>
+          </h2>
+        </div>
+
+        <p className="project-description">
+          A selection of projects I've built while learning, experimenting,
+          and growing as a web developer.
+        </p>
       </div>
-      <div className='card-image2'>
-          <img src="https://cdn.pixabay.com/photo/2017/12/06/04/56/facebook-3000954_1280.png" alt="facebook clone" />
-      </div>
-      <div className='card-body'>
-            <p>
-              A clone of the login page of Facebook created using HTML and CSS.
-            </p>
-            <a href="https://your-facebook-clone.netlify.app" target="_blank" rel="noopener noreferrer">
-              View on Netlify
+
+
+      {/* ================================
+          PROJECT 01 — MOVIEVERSE
+      ================================= */}
+
+      <article className="featured-project">
+
+        <div className="project-number">
+          01
+        </div>
+
+        <div className="project-image movieverse-image">
+          <img
+            src="/projects/MovieVerse.png"
+            alt="MovieVerse project preview"
+          />
+        </div>
+
+        <div className="project-info">
+
+          <p className="project-type">
+            FULL-STACK WEB APPLICATION
+          </p>
+
+          <h3>MovieVerse</h3>
+
+          <p className="project-description">
+            A movie ticket booking platform where users can explore movies,
+            book tickets, and order food for their cinema experience.
+          </p>
+
+          <div className="tech-stack">
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+
+          <div className="project-links">
+
+            <a
+              href="https://movie-verse-lovat-five.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo <span>↗</span>
             </a>
+
+            <a
+              href="https://github.com/somyaaa7ddumc/Movie-Verse"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub <span>↗</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      {/* ================================
+          PROJECT 02 — WEATHERLY
+      ================================= */}
+
+      <article className="featured-project weather-project">
+
+        <div className="project-number">
+          02
+        </div>
+
+        <div className="project-image weather-image">
+          <img
+            src="/projects/Weatherly.png"
+            alt="Weatherly project preview"
+          />
+        </div>
+
+        <div className="project-info">
+
+          <p className="project-type">
+            WEATHER · API · REACT
+          </p>
+
+          <h3>Weatherly</h3>
+
+          <p className="project-description">
+            A responsive weather application that fetches real-time
+            weather information and presents it through a clean,
+            user-friendly interface.
+          </p>
+
+          <div className="tech-stack">
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>REST API</span>
+            <span>CSS</span>
+          </div>
+
+          <div className="project-links">
+
+            <a
+              href="https://react-weather-api-project-lime.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo <span>↗</span>
+            </a>
+
+            <a
+              href="https://github.com/somyaaa7ddumc/Weatherly"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub <span>↗</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      {/* ================================
+          RESERVED PROJECTS — 03–05
+      ================================= */}
+
+      <div className="reserved-projects">
+
+        <div className="reserved-heading">
+          <span>03 — 05</span>
+          <p>MORE BUILDS COMING SOON</p>
+        </div>
+
+        <div className="reserved-grid">
+
+          {/* TO-DO LIST */}
+
+          <div className="reserved-card">
+
+            <span>03</span>
+
+            <h4>To-Do List</h4>
+
+            <p>
+              A task management application currently being improved
+              for the portfolio.
+            </p>
+
+            <div className="reserved-links">
+
+              <a
+                href="https://to-do-project-blue.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo <span>↗</span>
+              </a>
+
+              <a
+                href="https://github.com/somyaaa7ddumc/To-Do-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <span>↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+
+          {/* STOPWATCH */}
+
+          <div className="reserved-card">
+
+            <span>04</span>
+
+            <h4>Stopwatch</h4>
+
+            <p>
+              A simple interactive stopwatch project currently being
+              improved for the portfolio.
+            </p>
+
+            <div className="reserved-links">
+
+              <a
+                href="https://stopwatch-project-hazel.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo <span>↗</span>
+              </a>
+
+              <a
+                href="https://github.com/somyaaa7ddumc/stopwatch-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <span>↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+
+          {/* ZODIAC FINDER */}
+
+          <div className="reserved-card">
+
+            <span>05</span>
+
+            <h4>Zodiac Finder</h4>
+
+            <p>
+              An interactive zodiac finder based on the user's date
+              and month of birth.
+            </p>
+
+            <div className="reserved-links">
+
+              <a
+                href="https://zodiac-finder-zeta.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo <span>↗</span>
+              </a>
+
+              <a
+                href="https://github.com/somyaaa7ddumc/Zodiac-Finder"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <span>↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-    </div>
- 
-  </div>
-    </>
+
+
+      <div className="projects-footer">
+        <span>04 / 06</span>
+        <span>BUILD · BREAK · IMPROVE · REPEAT</span>
+      </div>
+
+    </section>
   )
 }
- 
+
 export default Projects
