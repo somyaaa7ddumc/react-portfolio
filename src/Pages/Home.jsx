@@ -48,9 +48,7 @@ const Home = () => {
         <div className="orbit orbit-two"></div>
 
         <div className="photo-placeholder">
-          <span>YOUR</span>
-          <strong>PHOTO</strong>
-          <small>coming soon</small>
+          <img src="/profile.jpeg" alt="Profile" />
         </div>
 
         <div className="visual-label label-top">
